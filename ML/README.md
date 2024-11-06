@@ -1,1 +1,1 @@
-貝式、隨機森林、邏輯迴歸：【台灣行銷研究】Practice
+Practice
