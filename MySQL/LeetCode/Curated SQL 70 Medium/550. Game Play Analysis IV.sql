@@ -13,7 +13,7 @@ insert into Activity (player_id, device_id, event_date, games_played) values ('3
 
 WITH a AS (
 	SELECT DISTINCT player_id,
-		   # PARTITION BY 的作用是把一張表的數據 分組，類似於 GROUP BY，但不會壓縮數據。這些分組資料仍然保持獨立的行數。
+		   # PARTITION BY 的作用是把一張表的數據分組，類似於 GROUP BY，但不會壓縮數據。這些分組資料仍然保持獨立的行數。
 		   # OVER 子句 定義了窗口函數的工作範圍。
 		   FIRST_VALUE(event_date) OVER (PARTITION BY player_id ORDER BY event_date) AS first_login_date,
 		   NTH_VALUE(event_date, 2) OVER (PARTITION BY player_id) AS second_login_date
