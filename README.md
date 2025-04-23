@@ -12,7 +12,7 @@
 - 資料彙總（GROUP BY, HAVING）、
 - 表格連接（INNER JOIN, LEFT JOIN）、
 - 子查詢與視圖（subquery/view）應用。
-- Leetcode
+- Leetcode 練習紀錄
 
 ---
 
